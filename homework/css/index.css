@@ -1,0 +1,100 @@
+body {
+    min-height: 100vh;
+}
+
+.photo {
+    width: 100%;
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+}
+
+.photo-me {
+    position: absolute;
+    bottom: 50px;
+    color: #f3f3f3;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #00000050;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    line-height: 70px;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.photo:hover .photo-me {
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+    .photo-me {
+        height: 50px;
+        line-height: 50px;
+        bottom: 20px;
+    }
+}
+
+.about-me {
+    width: 100%;
+    text-align: center;
+}
+
+.Chen-MI {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/index/MI.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: #00000080 3px 5px 5px;
+}
+
+.Introduction {
+    width: 100%;
+}
+
+.Introduction-item {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100;
+    display: flex;
+}
+
+.Introduction-item>img {
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: #00000080 3px 3px 5px;
+}
+
+@media (max-width:768px) {
+    .Introduction-item>img {
+        height: 100px;
+    }
+}
+
+@media (max-width:425px) {
+    .Introduction-item>img {
+        height: 75px;
+    }
+}
+
+.Introduction-message {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    flex: 4;
+    margin: 5px;
+}

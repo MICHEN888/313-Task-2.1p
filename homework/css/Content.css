@@ -1,0 +1,29 @@
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.Chen-MI {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/index/MI.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 50%;
+    box-shadow: #00000080 3px 5px 5px;
+}
+
+.message{
+    width: 100%;
+    max-width: 768px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item{
+    flex: 50%;
+    box-sizing: border-box;
+    padding: 10px 5px;   
+}

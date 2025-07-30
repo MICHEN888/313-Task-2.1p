@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css//Login.css">
+    <link rel="stylesheet" href="../css/Register.css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <!-- Navigation bar -->
+            <ul class="nav-body">
+                <li class="nav-ation"><a href="../index.html">About</a></li>
+                <li><a href="../html/Work.html">Work</a></li>
+                <li><a href="../html/Forum.html">Forum</a></li>
+                <li><a href="../html/Content.html">Content</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="register-container">
+            <div class="register-card">
+                <h1 class="register-title">Create Your Account</h1>
+
+                <form id="registerForm">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="input-field" placeholder="Enter your full name"
+                                required>
+                            <div class="error-message" id="nameError"></div>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+                            <div class="error-message" id="emailError"></div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="account">Account</label>
+                        <input type="text" id="account" class="input-field" placeholder="Enter username" required>
+                        <div class="error-message" id="accountError"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" class="input-field" placeholder="Create a password"
+                                required>
+                            <span class="toggle-password" id="togglePassword">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                        </div>
+                        <div class="error-message" id="passwordError"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="password-container">
+                            <input type="password" id="confirmPassword" class="input-field"
+                                placeholder="Confirm your password" required>
+                            <span class="toggle-password" id="toggleConfirmPassword">
+                                <i class="fas fa-eye"></i>
+                            </span>
+                        </div>
+                        <div class="error-message" id="confirmPasswordError"></div>
+                    </div>
+
+                    <button type="submit" class="register-btn" id="registerButton">Create Account</button>
+
+                    <div class="login-link">
+                        Already have an account? <a href="./login.html">Sign in</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../js/Register.js"></script>
+
+</html>
